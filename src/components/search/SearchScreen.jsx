@@ -21,6 +21,7 @@ export const SearchScreen = () => {
   const heroesFiltered = useMemo(() => getHeroesByName(q), [q]);
 
   const handleSearch = (e) => {
+
     e.preventDefault();
     navigate(`?q=${searchText}`);
   }
